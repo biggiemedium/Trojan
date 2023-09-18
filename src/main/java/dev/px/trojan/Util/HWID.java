@@ -1,8 +1,8 @@
-package dev.px.trojan.util;
+package dev.px.trojan.Util;
 
 import java.net.InetAddress;
 
-public class HWIDutil {
+public class HWID {
 
     public String HWID() {
         String user = "";
@@ -64,5 +64,5 @@ public class HWIDutil {
         return System.getProperty("user.name");
     }
 
-    public static HWIDutil Get = new HWIDutil();
+    public static HWID Get = new HWID();
 }

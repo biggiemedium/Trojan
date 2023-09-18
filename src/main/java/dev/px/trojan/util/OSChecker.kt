@@ -1,9 +1,8 @@
-package dev.px.trojan.util
+package dev.px.trojan.Util
 
 object OSChecker {
 
     val os = System.getProperty("os.name").toLowerCase()
-
 
     fun isMac(): Boolean {
         var OS = System.getProperty("os.name").toLowerCase()
