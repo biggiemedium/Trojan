@@ -1,6 +1,7 @@
 package dev.px.trojan;
 
 import dev.px.trojan.Impl.Handler;
+import dev.px.trojan.Injection.Injection;
 
 public class Trojan {
 

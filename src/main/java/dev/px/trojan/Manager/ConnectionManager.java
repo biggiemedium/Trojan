@@ -1,6 +1,6 @@
-package dev.px.trojan.Impl;
+package dev.px.trojan.Manager;
 
-import dev.px.trojan.Connections.ConnectionSocket;
+import dev.px.trojan.Connections.Network.ConnectionSocket;
 import dev.px.trojan.Connections.FileQueue;
 
 public class ConnectionManager {
