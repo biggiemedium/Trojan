@@ -1,6 +1,8 @@
 package dev.px.trojan.Connections;
 
-public class Connection {
+import dev.px.trojan.Util.Listeners.IConnection;
+
+public class Connection implements IConnection {
 
     private int port;
 
@@ -8,6 +10,12 @@ public class Connection {
         this.port = port;
     }
 
+    @Override
     public void onConnection() {}
 
+    @Override
+    public void connect() {}
+
+    @Override
+    public void disconnect() {}
 }

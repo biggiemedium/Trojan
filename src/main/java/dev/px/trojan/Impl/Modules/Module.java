@@ -10,22 +10,22 @@ public class Module {
     private String name;
     private boolean active;
     private Priority priority;
-    private boolean threaded;
+    private ThreadMode threaded;
 
     public Module(String name, boolean active) {
         this.name = name;
         this.active = active;
-        this.threaded = true;
+        this.threaded = ThreadMode.CONSTANT;
     }
 
     public Module(String name, boolean active, Priority priority) {
         this.name = name;
         this.active = active;
         this.priority = priority;
-        this.threaded = true;
+        this.threaded = ThreadMode.CONSTANT;
     }
 
-    public Module(String name, boolean active, Priority priority, boolean threaded) {
+    public Module(String name, boolean active, Priority priority, ThreadMode threaded) {
         this.name = name;
         this.active = active;
         this.priority = priority;
@@ -65,6 +65,12 @@ public class Module {
         HIGH,
         NEUTRAL,
         LOW
+    }
+
+    public enum ThreadMode {
+        CONSTANT,
+        INTERVAL,
+        NONE
     }
 
     @Retention(RetentionPolicy.RUNTIME)

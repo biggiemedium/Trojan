@@ -1,4 +1,4 @@
-package dev.px.trojan.Util;
+package dev.px.trojan.Util.System;
 
 import java.util.Locale;
 

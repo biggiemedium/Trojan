@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 
 public class NetworkHandler {
 
@@ -31,4 +32,5 @@ public class NetworkHandler {
 
         return false;
     }
+
 }

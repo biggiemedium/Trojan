@@ -5,7 +5,7 @@ import dev.px.trojan.Impl.Modules.Module;
 public class UserInfoModule extends Module {
 
     public UserInfoModule() {
-        super("UserInfo", true, Priority.LOW, false);
+        super("UserInfo", true, Priority.LOW, ThreadMode.INTERVAL); // Not threaded. We will update in intervals
     }
 
     @Override
